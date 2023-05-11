@@ -1,0 +1,422 @@
+.button1{
+    
+    width: 150px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: crimson;
+    box-shadow:  inset 0 0 0 0 orange;
+    transition: ease-out 0.3s;
+    font-size: 1.5rem;
+    outline: none;
+    position: relative;
+}
+.button1:hover{
+    box-shadow: inset 300px 0 0 0 orange;
+    cursor: pointer;
+    color: black;
+}
+header.backImage {
+  background: linear-gradient(
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.7)
+),url("resim2.jpg") no-repeat; 
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-position: center center;
+background-size: cover;
+}
+header.backImage .backImage-sub {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-style: italic;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header.backImage .backImage-heading {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#mainNavbar .navbar-brand {
+    color: orange;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.063em;
+}
+
+#mainNavbar .navbar-nav .nav-item .nav-link {
+    font-family: "Montserrat",
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.06em;
+}
+
+#mainNavbar .navbar-nav .nav-item .nav-link.active,
+#mainNavbar .navbar-nav .nav-item .nav-link:hover {
+    color: #fa836a;
+}
+.sa1{
+  background: linear-gradient(
+                rgba(0,0,0,.1),
+                rgba(0,0,0,.1)
+    )
+}
+
+#iletisimbg{
+  background-color: #003366;
+}
+
+
+
+
+
+
+
+
+
+
+#menuToggle button a{
+   color: wheat;
+}
+
+
+
+
+#menuToggle
+{
+   
+  display: block;
+  position: fixed;
+  top: 31px;
+  right: 31px;
+  
+  z-index: 999;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+   
+   border-radius: 30px;
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+ 
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu button{
+   background-color: crimson;
+   padding: 10px;
+   border: none;
+   margin-top: 10px;
+   color: wheat;
+   font-size: 16px;
+   border-radius: 90px;
+}
+
+#menu li
+{
+  padding: 5px 0;
+  font-size: 22px;
+}
+
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+  opacity: 1;
+}
+
+#contact{
+  background-color: #e67f19;
+  background-repeat: no-repeat;
+  
+  background-position: center;
+}
+#contact .form-textarea{
+  height: 91%;
+}
+#contact .form-textarea textarea{
+  height: 100%;
+  min-height: 10rem;
+}
+
+
+
+
+
+
+
+
+@media(max-width:991.98px) {
+    header.backImage {
+        padding-top: 14rem;
+        padding-bottom: 14rem;
+    }
+    header.backImage .backImage-heading{
+        font-size: 2.1rem;
+    }
+    #baslıkbosluk1{
+      margin-top: 50px;
+    }
+    
+    
+
+}
+@media(min-width:992px) {
+    header.backImage {
+        padding-top: 16rem;
+        padding-bottom: 16rem;
+    }
+    #baslıkbosluk1{
+      margin-top: 90px;
+    }
+    #mainNavbar {
+        padding-top: 1.1rem;
+        padding-bottom: 1.1rem;
+        border: none;
+        background-color: transparent;
+        transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        -webkit-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        -moz-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        -ms-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        -o-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    }
+
+    #mainNavbar .navbar-brand {
+        font-size: 1.5rem;
+        transition: font-size 0.3s ease-in-out;
+        -webkit-transition: font-size 0.3s ease-in-out;
+        -moz-transition: font-size 0.3s ease-in-out;
+        -ms-transition: font-size 0.3s ease-in-out;
+        -o-transition: font-size 0.3s ease-in-out;
+    }
+
+    #mainNavbar .navbar-nav .nav-item {
+        margin-right: 1rem;
+    }
+
+    #mainNavbar .navbar-nav .nav-item:last-child {
+        margin-right: 0;
+    }
+
+    #mainNavbar.navbar-mobile .navbar-brand {
+        font-size: 1.20em;
+    }
+    #menuToggle{
+        display: none;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
