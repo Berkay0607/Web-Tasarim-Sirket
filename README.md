@@ -1,1 +1,1 @@
-$${A simple Web Design For Begginers}$$
+{A simple Web Design For Begginers}
